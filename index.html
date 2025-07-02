@@ -24,8 +24,8 @@
   background: url("fondo.jpg") no-repeat center center;
   background-size: cover;
   overflow: hidden;
+}
 
-    }
 
     #partido-wrapper {
       position: absolute;
@@ -35,14 +35,14 @@
 
    .jugadorA {
   position: absolute;
-  top: 480px;
-  left: 1150px;
+  top: 550px;
+  left: 1850px;
   width: 350px;
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-size: 180px;
+  font-size: 230px;
   color: #FFFFFF;
   font-family: 'NataExtraBoldItalic', sans-serif;
   letter-spacing: 10px;
@@ -60,14 +60,14 @@
 
 .jugadorB {
   position: absolute;
-  top: 480px;
-  left: 1750px;
+  top: 550px;
+  left: 2700px;
   width: 400px;
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-size: 180px;
+  font-size: 230px;
   color: #FFFFFF;
   font-family: 'NataExtraBoldItalic', sans-serif;
   letter-spacing: 10px;
@@ -86,8 +86,8 @@
 
     .cancha {
       position: absolute;
-      top: 1030px; left: 1470px;
-      font-size: 80px;
+      top: 1340px; left: 2200px;
+      font-size: 130px;
       color: #ffffff;
 	  font-family: 'NataExtraBoldItalic', sans-serif;
 	   letter-spacing: 5px; /* separa letras */
@@ -97,8 +97,8 @@
 
     .fecha {
       position: absolute;
-      top: 880px; left: 1300px;
-      font-size: 80px;
+      top: 1110px; left: 2000px;
+      font-size: 130px;
       color: #FFFFFF;
 	  font-family: 'NataExtraBoldItalic', sans-serif;
 	   letter-spacing: 5px; /* separa letras */
@@ -108,8 +108,8 @@
 
     .hora {
       position: absolute;
-      top: 880px; left: 1690px;
-      font-size: 80px;
+      top: 1110px; left: 2500px;
+      font-size: 130px;
       color: #ffffff;
 	  font-family: 'NataExtraBoldItalic', sans-serif;
 	   letter-spacing: 5px; /* separa letras */
@@ -138,13 +138,13 @@
 
         function mostrarPartido(i) {
           const p = partidos[i];
-          wrapper.innerHTML = 
+          wrapper.innerHTML = `
   <div class="jugadorA">${p.jugadorA}</div>
   <div class="jugadorB">${p.jugadorB}</div>
             <div class="cancha">Cancha: ${p.cancha}</div>
             <div class="fecha">${p.fecha}</div>
             <div class="hora">${p.hora}</div>
-          ;
+          `;
         }
 
         mostrarPartido(index);
@@ -156,3 +156,4 @@
   </script>
 </body>
 </html>
+

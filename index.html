@@ -35,17 +35,17 @@
 
    .jugadorA {
   position: absolute;
-  top: 550px;
-  left: 1850px;
-  width: 350px;
-  height: 150px;
+  top: 30vh;
+  left: 45vw;
+  width: 13vw;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-size: 230px;
+  font-size: 7vw;
   color: #FFFFFF;
   font-family: 'NataExtraBoldItalic', sans-serif;
-  letter-spacing: 10px;
+  letter-spacing: 0.2vw;
   text-transform: uppercase;
   font-weight: bold;
   white-space: nowrap;
@@ -60,62 +60,63 @@
 
 .jugadorB {
   position: absolute;
-  top: 550px;
-  left: 2700px;
-  width: 400px;
-  height: 150px;
+  top: 30vh;
+  left: 68vw;
+  width: 15vw;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-size: 230px;
+  font-size: 7vw;
   color: #FFFFFF;
   font-family: 'NataExtraBoldItalic', sans-serif;
-  letter-spacing: 10px;
+  letter-spacing: 0.2vw;
   text-transform: uppercase;
   font-weight: bold;
   white-space: nowrap;
   transform-origin: left center;
 }
-
 .jugadorB span {
   display: inline-block;
   max-width: 100%;
   transform: scaleX(1);
 }
 
-
     .cancha {
-      position: absolute;
-      top: 1340px; left: 2200px;
-      font-size: 130px;
-      color: #ffffff;
-	  font-family: 'NataExtraBoldItalic', sans-serif;
-	   letter-spacing: 5px; /* separa letras */
+  position: absolute;
+  top: 75vh;
+  left: 55vw;
+  font-size: 4vw;
+  color: #ffffff;
+  font-family: 'NataExtraBoldItalic', sans-serif;
+  letter-spacing: 0.2vw;
   text-transform: uppercase;
-      font-weight: bold;
-    }
+  font-weight: bold;
+}
 
     .fecha {
-      position: absolute;
-      top: 1110px; left: 2000px;
-      font-size: 130px;
-      color: #FFFFFF;
-	  font-family: 'NataExtraBoldItalic', sans-serif;
-	   letter-spacing: 5px; /* separa letras */
+  position: absolute;
+  top: 63vh;
+  left: 50vw;
+  font-size: 4vw;
+  color: #FFFFFF;
+  font-family: 'NataExtraBoldItalic', sans-serif;
+  letter-spacing: 0.2vw;
   text-transform: uppercase;
-	  font-weight: bold;
-    }
+  font-weight: bold;
+}
 
     .hora {
-      position: absolute;
-      top: 1110px; left: 2500px;
-      font-size: 130px;
-      color: #ffffff;
-	  font-family: 'NataExtraBoldItalic', sans-serif;
-	   letter-spacing: 5px; /* separa letras */
+  position: absolute;
+  top: 63vh;
+  left: 68vw;
+  font-size: 4vw;
+  color: #ffffff;
+  font-family: 'NataExtraBoldItalic', sans-serif;
+  letter-spacing: 0.3vw;
   text-transform: uppercase;
-	  font-weight: bold;
-    }
+  font-weight: bold;
+}
   </style>
 </head>
 <body>
@@ -151,7 +152,7 @@
         setInterval(() => {
           index = (index + 1) % partidos.length;
           mostrarPartido(index);
-        }, 15000);
+        }, 1500000);
       });
   </script>
 </body>

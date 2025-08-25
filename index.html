@@ -4,119 +4,127 @@
   <meta charset="UTF-8">
   <title>Wimbledon - Hoy</title>
   <style>
+  /* Importamos todas las variantes de Unbounded */
   @font-face {
-  font-family: 'NataExtraBoldItalic';
-  src: url('Nata Extra Bold Italic.otf') format('opentype');
-}
-  
-    body {
-      background: #010101;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      font-family: 'Open Sans', sans-serif;
-    }
+    font-family: 'Unbounded';
+    src: url('Unbounded-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
 
-    #contenedor {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background: url("fondo.png") no-repeat center center;
-  background-size: cover;
-  overflow: hidden;
-}
+  @font-face {
+    font-family: 'Unbounded';
+    src: url('Unbounded-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
 
+  @font-face {
+    font-family: 'Unbounded';
+    src: url('Unbounded-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
 
-    #partido-wrapper {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
+  @font-face {
+    font-family: 'Unbounded';
+    src: url('Unbounded-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+  }
 
-   .jugadorA {
-  position: absolute;
-  top: 32vh;
-  left: 45vw;
-  width: 13vw;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  font-size: 7vw;
-  color: #140c7d;
-  font-family: 'NataExtraBoldItalic', sans-serif;
-  letter-spacing: 0.2vw;
-  text-transform: uppercase;
-  font-weight: bold;
-  white-space: nowrap;
-  transform-origin: right center;
-}
+  body {
+    background: #010101;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Unbounded', sans-serif;
+  }
 
-.jugadorA span {
-  display: inline-block;
-  max-width: 100%;
-  transform: scaleX(1);
-}
+  #contenedor {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url("fondo.png") no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+  }
 
-.jugadorB {
-  position: absolute;
-  top: 32vh;
-  left: 68vw;
-  width: 15vw;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 7vw;
-  color: #140c7d;
-  font-family: 'NataExtraBoldItalic', sans-serif;
-  letter-spacing: 0.2vw;
-  text-transform: uppercase;
-  font-weight: bold;
-  white-space: nowrap;
-  transform-origin: left center;
-}
-.jugadorB span {
-  display: inline-block;
-  max-width: 100%;
-  transform: scaleX(1);
-}
+  #partido-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
 
-    .cancha {
-  position: absolute;
-  top: 70vh;
-  left: 55vw;
-  font-size: 4vw;
-  color: #1131e9;
-  font-family: 'NataExtraBoldItalic', sans-serif;
-  letter-spacing: 0.2vw;
-  text-transform: uppercase;
-  font-weight: bold;
-}
+  .jugadorA {
+    position: absolute;
+    top: 32vh;
+    left: 45vw;
+    width: 13vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 7vw;
+    color: #140c7d;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 800; /* ExtraBold */
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transform-origin: right center;
+  }
 
-    .fecha {
-  position: absolute;
-  top: 60vh;
-  left: 50vw;
-  font-size: 4vw;
-  color: #1131e9;
-  font-family: 'NataExtraBoldItalic', sans-serif;
-  letter-spacing: 0.2vw;
-  text-transform: uppercase;
-  font-weight: bold;
-}
+  .jugadorB {
+    position: absolute;
+    top: 32vh;
+    left: 68vw;
+    width: 15vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 7vw;
+    color: #140c7d;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 800; /* ExtraBold */
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transform-origin: left center;
+  }
 
-    .hora {
-  position: absolute;
-  top: 60vh;
-  left: 68vw;
-  font-size: 4vw;
-  color: #1131e9;
-  font-family: 'NataExtraBoldItalic', sans-serif;
-  letter-spacing: 0.3vw;
-  text-transform: uppercase;
-  font-weight: bold;
-}
+  .cancha {
+    position: absolute;
+    top: 70vh;
+    left: 55vw;
+    font-size: 4vw;
+    color: #1131e9;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 700; /* Bold */
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+  }
+
+  .fecha {
+    position: absolute;
+    top: 60vh;
+    left: 50vw;
+    font-size: 4vw;
+    color: #1131e9;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500; /* Medium */
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+  }
+
+  .hora {
+    position: absolute;
+    top: 60vh;
+    left: 68vw;
+    font-size: 4vw;
+    color: #1131e9;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 700; /* Bold */
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
+  }
   </style>
 </head>
 <body>
@@ -140,8 +148,8 @@
         function mostrarPartido(i) {
           const p = partidos[i];
           wrapper.innerHTML = `
-  <div class="jugadorA">${p.jugadorA}</div>
-  <div class="jugadorB">${p.jugadorB}</div>
+            <div class="jugadorA">${p.jugadorA}</div>
+            <div class="jugadorB">${p.jugadorB}</div>
             <div class="cancha">Cancha: ${p.cancha}</div>
             <div class="fecha">${p.fecha}</div>
             <div class="hora">${p.hora}</div>
@@ -157,6 +165,7 @@
   </script>
 </body>
 </html>
+
 
 
 
